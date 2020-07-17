@@ -1,12 +1,14 @@
-let inteiros = [2, 3, 6, 17, 10, 1];
-let maiorValor;
-let maiorValorAtual = inteiros[0];
+let inteiros = [2, 3, 6, 7, 10, 1];
 
-for(let i = 0; i < inteiros.length; i += 1){
-    if(inteiros[i] >= maiorValorAtual){
-        maiorValor = i;
-    }else{
-        
+function pegandoMaiorIndice(inteiros){
+    let indiceMaior = 0;
+
+    for (let indice in inteiros) {
+        if(inteiros[indiceMaior] < inteiros[indice]){
+            indiceMaior = indice;
+        }
     }
+    return indiceMaior;
 }
-console.log(maiorValor);
+
+console.log(pegandoMaiorIndice(inteiros));

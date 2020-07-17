@@ -1,4 +1,6 @@
 let arrTeste = [2,3,2,5,8,2,3];
+
+function numQMaisRepete(arrTeste){
 let nTeste = 0;
 let contador = 0;
 let contRepetido = 0;
@@ -18,4 +20,7 @@ for(let i in arrTeste){
     }
     contador = 0;
 }
-console.log(nMaisRepetido);
+return nMaisRepetido;
+}
+
+console.log(numQMaisRepete(arrTeste));

@@ -20,7 +20,7 @@ for(let i in arrTeste){
     }
     contador = 0;
 }
-return nMaisRepetido;
+return contRepetido;
 }
 
 console.log(numQMaisRepete(arrTeste));

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+        //Exercicio 1
+        function changeText() {
+            let paragraph = document.getElementsByTagName('p')[0];
+            paragraph.innerHTML = 'Cristiano Nunes Desenvolvedor de Software';
+            paragraph.style.fontSize = '20px';
+            paragraph.style.backgroundColor = "rgb(76,164,109)";
+        }
+        changeText();
+        
+        //Exercicio 2
+        function changeToGreen(){
+          let squareYellow = document.getElementsByClassName('main-content')[0];
+          squareYellow.style.backgroundColor = "rgb(76,164,109)";
+        }
+        changeToGreen();
+        
+        //Exercicio 3
+        function changeToWhite() {
+          let squareRed = document.getElementsByClassName('center-content')[0];
+          squareRed.style.backgroundColor = "white";
+        }
+        changeToWhite();
+
+        //Exercicio 4
+        function corrigirH1() {
+          let titulo = document.getElementById('title');
+          titulo.innerHTML = ('Exercício 5.1 - JavaScript');
+        }
+        corrigirH1();
+
+        //Exercicio 5
+        function upperCaseP() {
+          let paragraph = document.getElementsByTagName('p')[0].innerHTML;
+          let paragraph2 = paragraph.toUpperCase();
+          document.getElementsByTagName('p')[0].innerHTML = (paragraph2);
+        }
+        upperCaseP();
+
+        //Exercicio 6
+        function printP(tagP) {
+          for(let i = 0; i < document.getElementsByTagName(tagP).length; i++)
+            console.log(document.getElementsByTagName(tagP)[i].innerText)
+        }
+        printP('p');
+    </script>
+  </body>
+</html>

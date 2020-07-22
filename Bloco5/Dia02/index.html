@@ -68,14 +68,19 @@
       document.body.appendChild(divMain);
 
       //Exercicio 3
-      let divContent = document.createElement('div');
-      divContent.className = "center-content";
-      divMain.appendChild(divContent);
+      let divCenter = document.createElement('div');
+      divCenter.className = "center-content";
+      divMain.appendChild(divCenter);
 
       //Exercicio 4
       let pDivCenter = document.createElement('p');
       pDivCenter.innerHTML = "Algum texto";
-      divContent.appendChild(pDivCenter);
+      divCenter.appendChild(pDivCenter);
+
+      //Exercicio 5
+      let divLeft = document.createElement('div');
+      divLeft.className = "left-content";
+      divMain.appendChild(divLeft);
       
     </script>
   </body>

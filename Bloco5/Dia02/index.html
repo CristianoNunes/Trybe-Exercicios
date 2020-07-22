@@ -92,6 +92,18 @@
       img.src = 'https://picsum.photos/200';
       img.className = 'small-image';
       divLeft.appendChild(img);
+
+      //Exercicio 8
+      let listNaoOrdenada = document.createElement('ul');
+      divRight.appendChild(listNaoOrdenada);
+      let arrNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+      for (let i in arrNumeros){
+        let li = document.createElement('li');
+        li.innerHTML = arrNumeros[i];
+        listNaoOrdenada.appendChild(li);
+      }
+      let li1 = document.createElement('li');
+
       
     </script>
   </body>

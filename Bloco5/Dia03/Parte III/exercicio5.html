@@ -13,12 +13,22 @@
       
     let imgCat = document.getElementsByTagName('img')[0];
     imgCat.style.left = '0px';
+    let frente = true;
     function catWalk() {
-        let ladoLeft = parseInt(imgCat.style.left);
+    let ladoLeft = parseInt(imgCat.style.left);
+    
+    if (frente && (ladoLeft > (window.innerWidth-imgCat.width))) {
+        frente = false;
+    }
+    if (!frente && (ladoLeft <= 0)) {
+        frente = true;
+    }
+    
+    if (frente) {
         imgCat.style.left = (ladoLeft + 10) + 'px';
-        if (ladoLeft > (window.innerWidth-imgCat.width)) {
-        imgCat.style.left = '0px';
-        }
+    } else {
+        imgCat.style.left = (ladoLeft - 10) + 'px';
+    }
     }
     window.setInterval(catWalk, 50);
 

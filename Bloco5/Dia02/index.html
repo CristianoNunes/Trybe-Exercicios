@@ -116,7 +116,17 @@
       //Exercicio 1
       let title = document.getElementsByTagName('h1')[0];
       title.className = "title";
+
+      //Exercicio 2
+      let elementosH3 = document.getElementsByTagName('h3');
+      for (let i; i < 3; i += 1) {
+        elementosH3[i].className = 'description';
+      }
       
+      //Exercicio 3
+      let elementoDivLeftContent = document.getElementsByClassName('left-content')[0];
+      divMain.removeChild(elementoDivLeftContent);
+
     </script>
   </body>
 </html>

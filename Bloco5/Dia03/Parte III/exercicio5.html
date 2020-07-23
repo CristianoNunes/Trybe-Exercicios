@@ -11,13 +11,17 @@
     
   <script>
       
-      let imgCat = document.getElementsByTagName('img')[0];
-      imgCat.style.left = '0px';
+    let imgCat = document.getElementsByTagName('img')[0];
+    imgCat.style.left = '0px';
+    function catWalk() {
+        let ladoLeft = parseInt(imgCat.style.left);
+        imgCat.style.left = (ladoLeft + 10) + 'px';
+        if (ladoLeft > (window.innerWidth-imgCat.width)) {
+        imgCat.style.left = '0px';
+        }
+    }
+    window.setInterval(catWalk, 50);
 
-      function catWalk() {
-        imgCat.style.left = (parseInt(imgCat.style.left) + 10) + 'px';
-      }
-      window.setInterval(catWalk, 50);
   </script>
 </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form action="" method="" class="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="name">Nome:</label><br />
+                <input type="text" required="required" id="name" name="name" maxlength="40" />
+            </div>
+            <div>
+                <label for="email">Email:</label><br />
+                <input type="text" required="required" id="email" name="email" />
+                
+            </div>
+            <div>
+                <label for="cpf">CPF:</label><br />
+                <input type="text" required="required" id="cpf" name="cpf" maxlength="11" />
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label><br />
+                <input type="text" required="required" id="endereco" name="endereco" />
+            </div>
+            <div>
+                <label for="cidade">Cidade:</label><br />
+                <input type="text" required="required" id="cidade" name="cidade" />
+            </div>
+            <div>
+                <label for="estado">Estado:</label><br />
+                <select required="required" id="estado" name="estado">
+                    <!-- <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option> -->
+                </select>
+            </div>
+            <div>
+                <label">Tipo:</label><br />
+                <input type="radio" id="casa" name="tipo" value="casa" />
+                <label for="casa">Casa</label>
+                <input type="radio" id="apartamento" name="tipo" value="apartamento" />
+                <label for="apartamento">Apartamento</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Último Emprego</legend>
+            <div>
+                <label for="resumo-curriculo">Resumo do currículo:</label><br />
+                <textarea id="resumo-curriculo" name="resumo-curriculo" maxlength="1000" required="required" cols="50" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="">Cargo</label>
+                <input type="text" required="required" id="cargo" name="cargo" maxlength="40" />
+            </div>
+            <div>
+                <label for="decricao-cargo">Descrição do cargo:</label><br />
+                <textarea id="decricao-cargo" name="decricao-cargo" maxlength="500" required="required" cols="50" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="data-inicio">Data de Início</label>
+                <input type="text" id="data-inicio" name="data-inicio" />
+            </div>
+        </fieldset>
+        <button>Impedir Padrão</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>

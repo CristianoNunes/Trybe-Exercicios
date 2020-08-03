@@ -39,4 +39,5 @@ function generateState(){
 
 window.onload = function () {
   generateState();
+  document.getElementById('data-inicio').DatePickerX.init();
 }

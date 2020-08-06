@@ -34,5 +34,6 @@ figure {
 @media (min-width:800px) {
     body {
         background-color: blue;
+        font-size: 25px;
     }
 }

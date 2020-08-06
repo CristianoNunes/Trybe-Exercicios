@@ -25,4 +25,7 @@ figure {
         font-size: 25px;
     }
 
+    figure {
+        margin-top: 50px;
+    }
 }

@@ -1,4 +1,4 @@
-// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+// Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
 const lesson1 = {
   materia: 'Matemática',
@@ -6,7 +6,7 @@ const lesson1 = {
   professor: 'Maria Clara',
   turno: 'manhã',
 };
-  
+
 const lesson2 = {
   materia: 'História',
   numeroEstudantes: 20,
@@ -20,6 +20,6 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const listKeys = (obj) => Object.keys(obj);
-  
-console.log(listKeys(lesson2));
+const listValues = (obj) => Object.values(obj);
+
+console.log(listValues(lesson1));
